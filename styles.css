@@ -1,0 +1,187 @@
+/* VARIABLES */
+:root {
+    --main-font: 'Playfair Display', sans-serif;
+    --par-font: 'Mulish', sans-serif;
+    --fancy-font: 'Alegreya', sans-serif;
+}
+
+/* NAV START */
+
+a {
+    text-decoration: none;
+}
+
+.landing-container {
+    background-image: url('img/bread.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav-wrapper {
+    box-sizing: border-box;
+    display: flex;
+    padding: 8px 170px 8px 170px;
+    justify-content: space-between;
+    background-color: #56534cc9;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-list a,
+.nav-list span {
+    color: white;
+    font-size: 14px;
+    font-family: 'Alegreya', sans-serif;
+}
+
+.nav-list a {
+    letter-spacing: 4.2px;
+}
+
+.media-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+/* nav end */
+
+/* LANDING SECTION START */
+
+.landing-text {
+    height: calc(100vh - 83px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    gap: 40px;
+}
+
+.landing-text h1 {
+    font-size: 92px;
+    text-shadow: 0 1px 0 #3d3029;
+    text-align: center;
+
+}
+
+.landing-text p {
+    font-size: 24px;
+    font-family: var(--par-font);
+    max-width: 500px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.menu-button {
+    font-size: 14px;
+    font-family: var(--fancy-font);
+    padding: 14px 54px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #56534cc5;
+    border: 1px dashed #9e9c93;
+}
+
+/* landing section end */
+
+/* ART OF CAKES SECTION */
+
+.cake-section {
+    /* background-image: linear-gradient(-135deg, #c4b9ae 0%, #ffffff 100%); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 80%; */
+    margin: 0 auto;
+    padding: 120px 180px;
+    text-align: center;
+}
+
+.dessert-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px
+}
+
+.cake-description {
+    max-width: 484px;
+}
+
+.cake-description h2 {
+    color: #56534c;
+    font-family: var(--fancy-font);
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 16px;
+}
+
+.cake-description span {
+    font-family: var(--fancy-font);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #a47d5e;
+    display: block;
+    margin-bottom: 70px;
+}
+
+.cake-description p {
+    font-family: var(--par-font);
+    line-height: 24px;
+    font-size: 14px;
+    color: #56534c;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.chef-container h3 {
+    font-family: var(--fancy-font);
+    font-weight: 700;
+    color: #56534c;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    margin-bottom: 50px;
+}
+
+.chef {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.chef-name {
+    font-size: 24px;
+    font-family: var(--fancy-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    color: #56534c;
+    font-weight: 500;
+}
+.quote {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.quote img:nth-of-type(1) {
+    align-self: flex-start;
+}
+.quote img:nth-of-type(3) {
+    align-self: flex-end;
+}
