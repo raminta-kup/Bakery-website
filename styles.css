@@ -81,6 +81,7 @@ a {
     line-height: 36px;
     text-align: center;
     font-weight: 300;
+    text-shadow: 0 1px 0 #3d3029;
 }
 
 .menu-button {
@@ -96,24 +97,105 @@ a {
 
 /* landing section end */
 
+.divider-container {
+    width: 100%;
+    height: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.divider-container img {
+    position: absolute;
+}
+
+.divider-circle {
+    border-radius: 50%;
+    background-color: #ffffff;
+    height: 80px;
+    width: 80px;
+    background-image: url('img/duona.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* ART OF CAKES SECTION */
 
 .cake-section {
-    /* background-image: linear-gradient(-135deg, #c4b9ae 0%, #ffffff 100%); */
+    background-image: linear-gradient(#f9f8f2 0%, #ffffff 100%);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* width: 80%; */
-    margin: 0 auto;
-    padding: 120px 180px;
+    background-color: #f9f8f2;
+    padding: 90px 180px;
     text-align: center;
 }
 
 .dessert-gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px
+    grid-template-columns: 295px 295px;
+    grid-template-rows: 250px 250px;
+    gap: 20px;
+    position: relative;
+}
+
+.img-container {
+    background-size: contain;
+    position: relative;
+
+}
+
+.img-container img {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.dessert-gallery div:nth-child(1) {
+    background-image: url('img/flour.png');
+}
+
+.dessert-gallery div:nth-child(2) {
+    background-image: url('img/egg.png');
+}
+
+.dessert-gallery div:nth-child(3) {
+    background-image: url('img/img.png');
+}
+
+.dessert-gallery div:nth-child(4) {
+    background-image: url('img/chococake.png');
+}
+
+.sticker-container {
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 5%;
+    opacity: 0.98;
+    width: 283px;
+    height: 283px;
+    background-image: url('img/Vektor-tastes.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sticker-text {
+    font-size: 30px;
+    font-family: var(--fancy-font);
+    color: #c9b176;
+    max-width: 154px;
+    line-height: 36px;
 }
 
 .cake-description {
@@ -174,14 +256,17 @@ a {
     color: #56534c;
     font-weight: 500;
 }
+
 .quote {
     display: flex;
     justify-content: center;
     gap: 60px;
 }
+
 .quote img:nth-of-type(1) {
     align-self: flex-start;
 }
+
 .quote img:nth-of-type(3) {
     align-self: flex-end;
 }
